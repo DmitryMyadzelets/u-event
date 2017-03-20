@@ -1,0 +1,24 @@
+{
+  "name": "u-event",
+  "version": "1.0.0",
+  "description": "Event emitter micro helper",
+  "main": "index.js",
+  "scripts": {
+    "test": "node tests/bad.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DmitryMyadzelets/u-event.git"
+  },
+  "keywords": [
+    "node",
+    "event",
+    "emitter"
+  ],
+  "author": "Dmitry Myadzelets",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DmitryMyadzelets/u-event/issues"
+  },
+  "homepage": "https://github.com/DmitryMyadzelets/u-event#readme"
+}
