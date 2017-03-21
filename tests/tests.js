@@ -1,7 +1,12 @@
 /*jslint browser: false*/
 'use strict';
 
-const assert = require('assert');
+const assert = function () {
+    require('assert').apply(this, arguments);
+    assert.cnt += 1;
+};
+assert.cnt = 0;
+
 const ee = require('../index.js').emitter;
 
 var a = ee();
@@ -158,3 +163,6 @@ assert(passed);
 assert(c === c.on('foo', function () {
     return;
 }));
+
+
+console.log('Tests passed: ', assert.cnt);

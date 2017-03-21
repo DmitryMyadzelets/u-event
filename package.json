@@ -4,7 +4,7 @@
   "description": "Event emitter micro helper",
   "main": "index.js",
   "scripts": {
-    "test": "node tests/bad.js"
+    "test": "node tests/tests.js"
   },
   "repository": {
     "type": "git",
