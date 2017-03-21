@@ -158,33 +158,3 @@ assert(passed);
 assert(c === c.on('foo', function () {
     return;
 }));
-
-
-// Examples
-(function (run) {
-    if (!run) {
-        return;
-    }
-
-    function Foo(name, age) {
-        this.name = name;
-        this.age = age;
-    }
-    Foo.prototype.who = function () {
-        console.log(this.name);
-    };
-    a = new Foo('Alice', 21);
-    b = new Foo('Bob', 28);
-    ee(Foo.prototype)
-        .on('who', function () {
-            this.who();
-        })
-        .on('age', function () {
-            console.log(this.age);
-        });
-    a.emit('who'); // Alice
-    b.emit('who'); // Bob
-    a.emit('age'); // 21
-    b.emit('age'); // 28
-
-}(true));
