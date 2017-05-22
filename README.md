@@ -1,5 +1,7 @@
 # Event emitter micro helper
 
+Implements `on` method only. No `off` and `once` methods. Because that's only we need in the most projects.
+
     npm install u-event
 
 ## Standalone emitter
